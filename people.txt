@@ -1,0 +1,3 @@
+1. Imiê: Kacper, Nazwisko: Kwietniewski, Wiek: 22
+2. Imiê: Mateusz, Nazwisko: Kowalski, Wiek: 52
+3. Imiê: Jan, Nazwisko: Nowak, Wiek: 70
