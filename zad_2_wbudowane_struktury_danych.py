@@ -46,10 +46,13 @@ print('Pole powierzchni: ',circle[1],'\n')
 #Zadanie 5
 path = 'text.txt'
 line = str(input("Podaj ciąg do zapisania kończąc enterem: "))
-with open(path,'w') as file:
-    file.writelines(l for l in line if l != print)
+with open(path,'a') as file:
+    file.write(line)
+    while line.strip():
+        line = str(input("Podaj ciąg do zapisania kończąc enterem: "))
+        file.write(line)
     file.close()
-
+    
 #Zadanie 6
 pathP = 'people.txt'
 i = 1
