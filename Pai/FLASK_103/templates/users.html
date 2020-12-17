@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users list</title>
+    <script type="text/javascript" src="{{ url_for('static', filename='alarm.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>User list</h1>
+    <input type = 'button' onclick="alarm()" value="Alarm!">
+    <table border="1">
+        {% for user in users %}
+        <tr>
+            <td>{{ user }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
